@@ -50,9 +50,9 @@ while not running:
                     
     py.display.update()
     clock.tick(60) #60 FPS so it is responsive when editing cells
-        
 
 while running:
+    
     newCells = []
     for i in range(len(cells)):
             
@@ -100,6 +100,12 @@ while running:
         
     py.display.update()
     clock.tick(frameRate)
+    
+    events = py.event.get()
+    for event in events:                
+        if event.type == py.KEYDOWN:
+            if event.key == py.K_q:
+                py.quit()
     
 time.sleep(3)
 py.quit()
