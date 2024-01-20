@@ -101,7 +101,7 @@ while running:
     py.display.update()
     clock.tick(frameRate)
     
-    events = py.event.get()
+    events = py.event.get() #Checking for q press to exit window
     for event in events:                
         if event.type == py.KEYDOWN:
             if event.key == py.K_q:
