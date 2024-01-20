@@ -31,4 +31,4 @@ Same as gameOfLifeAnimation but with an extra state for dying and with new rules
 
 briansBrainInteractive:
 
-Same as gameOfLife but with an extra state for dying and with new rules as above. Middle mouse click adds a dying cell
+Same as gameOfLifeInteractive but with an extra state for dying and with new rules as above. Middle mouse click adds a dying cell
