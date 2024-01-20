@@ -14,3 +14,21 @@ Outputs an image of each generation for use in creating an animation, uses a ran
 gameOfLifeInteractive:
 
 Allows you to design the starting state of the cells. cellWidth is the number of cells wide and tall the board is. screenWidth is the size of the pygame window displaying the board. frameRate is the number of generations per second. Left click adds living cells, right click removes cells and pressing enter starts the iteration. Pressing Q closes the pygame window
+
+Brian's Brain:
+
+https://en.wikipedia.org/wiki/Brian%27s_Brain
+
+In each time step, a cell turns on if it was off but had exactly two neighbors that were on, just like the birth rule for Seeds. All cells that were "on" go into the "dying" state, which is not counted as an "on" cell in the neighbor count, and prevents any cell from being born there. Cells that were in the dying state go into the off state. 
+
+briansBrain:
+
+Same as gameOfLife but with an extra state for dying and with new rules as above
+
+briansBrainAnimation:
+
+Same as gameOfLifeAnimation but with an extra state for dying and with new rules as above
+
+briansBrainInteractive:
+
+Same as gameOfLife but with an extra state for dying and with new rules as above. Middle mouse click adds a dying cell
