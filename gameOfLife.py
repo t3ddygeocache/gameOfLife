@@ -55,7 +55,10 @@ while True:
             col = (255, 255, 255)
             
         screen.fill(col, rect=((i % cellWidth) * cellPix, (i // cellWidth) * cellPix, cellPix, cellPix))
-        
+
+    if cells == newCells:
+        break
+    
     cells = newCells.copy()
     
     for i in range(0, screenWidth+1, screenWidth // cellWidth):
